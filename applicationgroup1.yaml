@@ -1,0 +1,15 @@
+apiVersion: k8s.humalecttest.io/v1
+kind: ApplicationGroup
+metadata:
+  name: my-application-group
+spec:
+  applications:
+    - name: app-HumaOne
+      domain: humaone.example.com
+      replicas: 3
+      # Additional information specific to app-HumaOne
+    - name: app-HumaTwo
+      domain: humatwo.example.com
+      replicas: 2
+      # Additional information specific to app-HumaTwo
+
